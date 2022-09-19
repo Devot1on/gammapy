@@ -14,6 +14,9 @@ log = logging.getLogger(__name__)
 @click.group("check")
 def cli_check():
     """Run checks for Gammapy"""
+ 
+def hello():
+    log.info("I'm fine.")
 
 
 @cli_check.command("logging")
